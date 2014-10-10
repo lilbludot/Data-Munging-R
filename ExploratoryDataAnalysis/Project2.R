@@ -1,0 +1,7 @@
+library(dplyr)
+nei <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
+nei_df <- tbl_df(nei)
+scc_df <-tbl_df(SCC)
+rm(nei)
+rm(SCC)
